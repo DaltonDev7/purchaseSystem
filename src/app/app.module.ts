@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/home/home.component';
 import { SidebarModule } from './shared/sidebar/sidebar.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
