@@ -1,13 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProvidersComponent } from './providers/providers.component';
-import { ArticlesComponent } from './articles/articles.component';
-import { DeparmentComponent } from './deparment/deparment.component';
-import { PurchaseOrdersComponent } from './purchase-orders/purchase-orders.component';
-import { UnitMeasurementComponent } from './unit-measurement/unit-measurement.component';
+
 
 const routes: Routes = [
   {
@@ -16,23 +11,23 @@ const routes: Routes = [
   },
   {
     path: 'providers',
-    component: ProvidersComponent
+    loadChildren : () => import('./providers/providers.module').then( m => m.ProvidersModule)
   },
   {
     path: 'articles',
-    component: ArticlesComponent
+    loadChildren : () => import('./articles/article.module').then( m => m.ArticleModule)
   },
   {
     path: 'deparments',
-    component: DeparmentComponent
+    loadChildren : () => import('./deparment/deparment.module').then( m => m.DeparmentModule)
   },
   {
     path: 'purchase-orders',
-    component: PurchaseOrdersComponent
+    loadChildren : () => import('./purchase-orders/purchase-orders.module').then( m => m.PurchaseOrdersModule)
   },
   {
     path: 'unit-measurement',
-    component: UnitMeasurementComponent
+    loadChildren : () => import('./unit-measurement/unit-measurement.module').then( m => m.UnitMeasurementModule)
   }
 ]
 
