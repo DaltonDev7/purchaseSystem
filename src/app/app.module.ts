@@ -7,6 +7,8 @@ import { HomeComponent } from './shared/home/home.component';
 import { SidebarModule } from './shared/sidebar/sidebar.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -19,9 +21,13 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
     BrowserModule,
     AppRoutingModule,
     SidebarModule,
-    NavbarModule
+    NavbarModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
