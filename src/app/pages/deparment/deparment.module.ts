@@ -4,17 +4,23 @@ import { DeparmentListComponent } from './deparment-list/deparment-list.componen
 import { DeparmentRoutingModule } from './deparment-routing.module';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { AddDepartmentComponent } from './add-department/add-department.component';
+import { EditDepartmentComponent } from './edit-department/edit-department.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    DeparmentListComponent
+    DeparmentListComponent,
+    AddDepartmentComponent,
+    EditDepartmentComponent
   ],
   imports: [
     CommonModule,
     DeparmentRoutingModule,
     MatDialogModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ]
 })
 export class DeparmentModule { }

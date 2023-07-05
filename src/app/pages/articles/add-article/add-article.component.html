@@ -1,0 +1,20 @@
+<div class="">
+    <h2>Agregar Articulo</h2>
+
+    <div class="row">
+        <form [formGroup]="form">
+            <div class="col-12">
+                <label for="">Nombre</label>
+                <input type="text" class="form-control" formControlName="Description">
+            </div>
+            <div class="col-12">
+                <label for="">Marca</label>
+                <input type="text" class="form-control" formControlName="BranId">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <button class="btn btn-primary mt-3 mb-3" (click)="create()">Guardar</button>
+    </div>
+</div>

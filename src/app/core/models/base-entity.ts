@@ -1,6 +1,6 @@
 
 export interface BaseEntity {
-    Id?: number;
-    DateCreated?: string;
-    DateUpdated?: string;
+    id?: number;
+    dateCreated?: string;
+    dateUpdated?: string;
 }
