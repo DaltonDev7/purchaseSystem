@@ -1,52 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+//imports globales
+@import url('./global-styles/sidebar.scss');
+@import url('./global-styles/table.scss');
 
 
 //boostrap
 @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 
-/* You can add global styles to this file, and also import other style files */
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
   background-color: #F2F6FC;
 }
 
-
-
-
 // common css
 .background-primary {
   background-color: #1ABC9C;
 }
-
-.home-section {
-  position: relative;
-  min-height: 100vh;
-  top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
-  transition: all .5s ease;
-  z-index: 2;
-}
-
-.home-section .text {
-  display: inline-block;
-  /// font-weight: 500;
-  margin-left: 80px;
-  // margin-right: 80px;
-  margin-top: 60px;
-}
-
-.sidebar.open .home-section {
-  left: 250px;
-  width: calc(100% - 250px);
-}
-
-.section-table {
-  width: 1000px;
-  margin: 0px;
-}
-
 
 h1,
 h2,
@@ -57,16 +29,11 @@ h6 {
   margin-bottom: 18px;
 }
 
-table tr {
-  text-align: center;
-}
-
 .icon-acciones {
   font-size: 30px;
   margin: 4px;
   cursor: pointer;
 }
-
 
 html,
 body {
@@ -77,3 +44,19 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
