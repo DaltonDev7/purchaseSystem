@@ -4,37 +4,11 @@
 //boostrap
 @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 
+//font awesome
+@import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
+
 
 body {
     background-color: #F2F6FC;
 }
 
-
-
-
-// common css
-.background-primary {
-    background-color: #1ABC9C;
-}
-
-.home-section{
-    position: relative;
-    min-height: 100vh;
-    top:0;
-    left:78px;
-    width: calc(100% - 78px);
-    transition: all .5s ease;
-    z-index: 2;
-  }
-  
-  .home-section .text{
-    display: inline-block;
-   /// font-weight: 500;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  
-  .sidebar.open ~ .home-section{
-    left:250px;
-    width: calc(100% - 250px);
-  }

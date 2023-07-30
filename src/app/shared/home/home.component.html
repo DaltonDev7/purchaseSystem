@@ -1,58 +1,59 @@
-<div class="sidebar">
-    <div class="logo_details">
-        <i class="bx bxl-audible icon"></i>
-        <div class="logo_name">Sistema de compras</div>
-        <i class="bx bx-menu" id="btn"></i>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <aside class="section-sidebar" id="sidebar">
+        <div >
+            <div class="sidebar-logo">
+                <h3>Purchasing System</h3>
+            </div>
+            <!-- Sidebar Navigation -->
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a class="sidebar-link">
+                        <i class="fa-solid fa-gauge"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link">
+                        <i class="fa-solid fa-barcode"></i>
+                        Articulos
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                       Ordenes de compras
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link">
+                        <i class="fa-solid fa-house"></i>
+                        Departamentos
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link">
+                        <i class="fa-solid fa-users"></i>
+                        Proveedores
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link">
+                        <i class="fa-brands fa-unity"></i>
+                        Unidad de medida
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- Main Component -->
+    <div class="main">
+        <main class="content px-3 py-2">
+            <div class="container-fluid">
+                <div class="mt-5">
+                    <router-outlet> </router-outlet>
+                </div>
+            </div>
+        </main>
     </div>
-    <ul class="nav-list">
-        <li>
-            <a href="#">
-                <i class='bx bxs-dashboard'></i>
-                <span class="link_name">Dashboard</span>
-            </a>
-            <span class="tooltip">Dashboard</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-cart-alt"></i>
-                <span class="link_name">Ordenes de compra</span>
-            </a>
-            <span class="tooltip">Ordenes de compra</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-grid-alt"></i>
-                <span class="link_name">Departamentos</span>
-            </a>
-            <span class="tooltip">Departamentos</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-user"></i>
-                <span class="link_name">Proveedores</span>
-            </a>
-            <span class="tooltip">Proveedores</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-chat"></i>
-                <span class="link_name">Articulos</span>
-            </a>
-            <span class="tooltip">Articulos</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class="bx bx-pie-chart-alt-2"></i>
-                <span class="link_name">Unidades de medida</span>
-            </a>
-            <span class="tooltip">Unidades de medida</span>
-        </li>
-    </ul>
 </div>
-<section class="home-section">
-    <div class="text">
-
-        <router-outlet></router-outlet>
-
-    </div>
-</section>
